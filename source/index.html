@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BTCN1 - 20120619</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header_heading">Bài Tập 1 - 20120619</h1>
+                <nav class="navbar">
+                    <div class="nav_item">
+                        <a href="#" class="active">Menu 1</a>
+                    </div>
+                    <div class="nav_item">
+                        <a href="#">Menu 2</a>
+                    </div>
+                    <div class="nav_item">
+                        <a href="#">Menu 3</a>
+                    </div>
+                    <div class="nav_item">
+                        <a href="#">Menu 4</a>
+                    </div>
+                    <div class="nav_item">
+                        <a href="#">Menu 5</a>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="main">
+                    <h1 class="main_heading">Đăng kí học phần</h1>
+                    <div class="main_form">
+                        <form action="" id="form-register">
+                            <div class="form_input">
+                                <div class="form-group">
+                                    <label for="id" class="form-label">Mã số: </label>
+                                    <input id="id" name="id" type="text" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="fullname" class="form-label">Họ tên: </label>
+                                    <input id="fullname" name="fullname" type="text" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address" class="form-label">Địa chỉ: </label>
+                                    <input id="address" name="address" type="text" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Điện thoại: </label>
+                                    <input id="phone" name="phone" type="text" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sex" class="form-label">Giới tính :</label>
+                                    <div class="form-radio">
+                                        <input type="radio" id="male" name="sex" value="Nam" class="form-control" />
+                                        <label for="male">Nam</label>
+                                        <span></span>
+                                        <input type="radio" id="female" name="sex" value="Nữ" class="form-control" />
+                                        <label for="female">Nữ</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="birthday" class="form-label">Ngày sinh :</label>
+                                    <input id="birthday" name="birthday" type="date" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email: </label>
+                                    <input id="email" name="email" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="register">
+                                <div class="list">
+                                    <h3 class="title_subject">Các môn học</h3>
+                                    <ul class="list_subjects not_selected">
+                                        <li class="list_subject_item">Lập Trình Hướng Đối Tượng</li>
+                                        <li class="list_subject_item">Cấu Trúc Dữ Liệu</li>
+                                        <li class="list_subject_item">Lập Trình Windows</li>
+                                        <li class="list_subject_item">NM Công Nghệ Phần Mềm</li>
+                                        <li class="list_subject_item">Phát Triển Ứng Dụng Web</li>
+                                        <li class="list_subject_item">Cơ Sở Dữ Liệu</li>
+                                    </ul>
+                                </div>
+                                <div class="switch_btn_list">
+                                    <button class="btn switch_btn switch_btn-right">></button>
+                                    <button class="btn switch_btn switchAll_btn-right">>></button>
+                                    <button class="btn switch_btn switch_btn-left">&lt;</button>
+                                    <button class="btn switch_btn switchAll_btn-left">&lt;&lt;</button>
+                                </div>
+                                <div class="list">
+                                    <h3 class="title_subject_selected">Các môn học đã chọn</h3>
+                                    <ul class="list_subjects selected">
+                                        <li class="list_subject_item">Nhập Môn Lập Trình</li>
+                                        <li class="list_subject_item">Kỹ Thuật Lập Trình</li>
+                                        <li class="list_subject_item">Lập Trình Ứng Dụng Java</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submit_btn_list">
+                                <button class="btn" type="submit">Đăng kí</button>
+                                <button class="btn btn-reset" type="reset">Xóa hết</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <table class="student_list">
+                        <tr>
+                            <th>Mã số</th>
+                            <th>Họ và tên</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                        </tr>
+                        <tr>
+                            <td>20120001</td>
+                            <td>Nguyễn Thị A</td>
+                            <td>Nữ</td>
+                            <td>07/08/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120012</td>
+                            <td>Trần Văn C</td>
+                            <td>Nam</td>
+                            <td>12/24/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120074</td>
+                            <td>Lê Văn G</td>
+                            <td>Nam</td>
+                            <td>06/13/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120634</td>
+                            <td>Ngô Thị E</td>
+                            <td>Nữ</td>
+                            <td>10/10/2002</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="side">
+                    <div class="news_list">
+                        <div class="news_item">
+                            <h3 class="section"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> news 1</h3>
+                            <p class="news_content">
+                                content content content content content content content content content content content
+                                content content content content
+                            </p>
+                        </div>
+                        <div class="news_item">
+                            <h3 class="section"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> news 2</h3>
+                            <p class="news_content">
+                                content content content content content content content content content content content
+                                content content content content
+                            </p>
+                        </div>
+                        <div class="news_item">
+                            <h3 class="section"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> news 3</h3>
+                            <p class="news_content">
+                                content content content content content content content content content content content
+                                content content content content
+                            </p>
+                        </div>
+                        <div class="news_item">
+                            <h3 class="section"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> news 4</h3>
+                            <p class="news_content">
+                                content content content content content content content content content content content
+                                content content content content
+                            </p>
+                        </div>
+                        <div class="news_item">
+                            <h3 class="section"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> news 5</h3>
+                            <p class="news_content">
+                                content content content content content content content content content content content
+                                content content content content
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>Copyright &copy; 20120619</p>
+                <ul>
+                    <li>
+                        <a href="###" class="active">Menu1</a>
+                    </li>
+                    <li>
+                        <a href="###">Menu2</a>
+                    </li>
+                    <li>
+                        <a href="###">Menu3</a>
+                    </li>
+                    <li>
+                        <a href="###">Menu4</a>
+                    </li>
+                    <li>
+                        <a href="###">Menu5</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./main.js"></script>
+</html>
